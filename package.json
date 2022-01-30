@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js",
-      "start:dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "Brennan Tanner",
   "license": "ISC",
@@ -18,7 +17,8 @@
     "ejs": "^2.6.1",
     "express": "^4.17.2",
     "mongodb": "^4.3.1",
-    "mongoose": "^6.1.8"
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15"
   },
   "engines": {
     "node": "17.4.0"
