@@ -5,6 +5,8 @@
 }
 
 body {
+  background-color: #4717F6;
+  color: #E7DFDD;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -31,10 +33,23 @@ form {
   height: 100%;
 }
 
+.imageOverlay {
+
+  display: flex;
+justify-content: center;
+}
+
+#overlay1, #overlay2, #overlay3 {
+  position: absolute;
+  visibility: hidden;
+
+}
+
+
 .main-header {
   width: 100%;
-  height: 3.5rem;
-  background-color: #00695c;
+  height: 5rem;
+  background-color: #0E0816;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
@@ -63,11 +78,29 @@ form {
 .main-header__item a,
 .main-header__item button {
   font: inherit;
+  font-size: medium;
+padding: 1rem;
+background-color: #0E0816;
+border-radius: 15px;
   background: transparent;
   border: none;
   text-decoration: none;
-  color: white;
+  border-radius: 15px;
+  color: #A239CA;
   cursor: pointer;
+  -moz-transition: padding 0.4s ease;
+  -webkit-transition: padding 0.4s ease;
+  -ms-transition: padding 0.4s ease;
+  transition: [padding] 0.4s ease;
+  -moz-transition: font-size 0.4s ease;
+  -webkit-transition: font-size 0.4s ease;
+  -ms-transition: font-size 0.4s ease;
+  transition: font-size 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+ 
 }
 
 .main-header__item a:hover,
@@ -75,7 +108,23 @@ form {
 .main-header__item a.active,
 .main-header__item button:hover,
 .main-header__item button:active {
-  color: #ffeb3b;
+  background-color: #5BC0BE;
+  color: #4717F6;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: larger;
+  -moz-transition: padding 0.4s ease;
+  -webkit-transition: padding 0.4s ease;
+  -ms-transition: padding 0.4s ease;
+  transition: padding 0.4s ease;
+  -moz-transition: font-size 0.4s ease;
+  -webkit-transition: font-size 0.4s ease;
+  -ms-transition: font-size 0.4s ease;
+  transition: font-size 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .mobile-nav {
@@ -85,7 +134,7 @@ form {
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: #0E0816;
   z-index: 10;
   padding: 2rem 1rem 1rem 2rem;
   transform: translateX(-100%);
@@ -113,7 +162,7 @@ form {
 .mobile-nav__item button {
   font: inherit;
   text-decoration: none;
-  color: black;
+  color: #E7DFDD;
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   background: transparent;
@@ -126,8 +175,8 @@ form {
 .mobile-nav__item a.active,
 .mobile-nav__item button:hover,
 .mobile-nav__item button:active {
-  background: #00695c;
-  color: white;
+  background: #4717F6;
+  color: #A239CA;
   border-radius: 3px;
 }
 
@@ -147,8 +196,9 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  color: #5BC0BE;
+  border-color: #5BC0BE;
+  border-radius: 15px;
 }
 
 .backdrop {
@@ -170,6 +220,8 @@ form {
 }
 
 .card {
+  background-color: #A239CA;
+  border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
@@ -203,13 +255,17 @@ form {
   margin: 0 0.25rem;
 }
 
+.buttons {
+  margin: 30px;
+}
+
 .btn {
   display: inline-block;
   padding: 0.25rem 1rem;
   text-decoration: none;
   font: inherit;
-  border: 1px solid #00695c;
-  color: #00695c;
+  border: 1px solid #5BC0BE;
+  color: #5BC0BE;
   background: white;
   border-radius: 3px;
   cursor: pointer;
@@ -217,7 +273,7 @@ form {
 
 .btn:hover,
 .btn:active {
-  background-color: #00695c;
+  background-color: #5BC0BE;
   color: white;
 }
 

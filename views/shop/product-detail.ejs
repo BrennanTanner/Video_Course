@@ -3,12 +3,28 @@
 
     <body>
         <%- include('../includes/navigation.ejs') %>
+        <%- include('../includes/header.ejs') %>
         <main class="centered">
             <h1><%= product.title %></h1>
             <hr>
+            <div class="imageOverlay">
+                <img class="image" id="overlay1" src="../images/poster.png">
+                <img class="image" id="overlay2" src="../images/shirt.png">
+                <img class="image" id="overlay3" src="../images/sticker.png">
+            </div>
             <div class="image">
                 <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
             </div>
+        
+        <div class="buttons">
+            <button class="btn" type="button" onClick="togglePosterView()">Poster</button>
+
+            <button class="btn" type="button" onClick="toggleShirtView()">Shirt</button>
+            
+            <button class="btn" type="button" onClick="toggleStickerView()">Sticker</button>
+        </div>
+
+
             <h2><%= product.price %></h2>
             <p><%= product.description %></p>
             <% if (isAuthenticated) { %>
